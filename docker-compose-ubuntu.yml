@@ -2,7 +2,7 @@
 services:
   pdf2md-back:
     image: ${GHCR_UBUNTU_PATH}
-    container_name: pdf2md-back
+    container_name: pdf2md-front
     restart: unless-stopped
     environment:
       - API_ENV=${API_ENV}
