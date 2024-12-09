@@ -1,0 +1,93 @@
+#root{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 20px 40px;
+  min-height: 100vh;
+}
+
+.converter{
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+}
+
+.controls{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 40px;
+}
+
+.title{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.title .logo{
+  width: 50px;
+  filter: drop-shadow(2px 2px 4px #1d202138);
+}
+
+.form-url{
+  display: flex;
+  min-width: 45%;
+}
+
+.form-url input{
+  border-radius: 10px 0px 0px 10px;
+  border: 1px solid #242424;
+  border-right: none;
+  padding: 0px 10px;
+  flex-grow: 1;
+}
+.form-url input:focus{
+  outline: none;
+}
+.form-url button{
+  border-radius: 0px 10px 10px 0px;
+  background-color: #64CCC5;
+  font-weight: 700;
+  padding: 0px 20px;
+  font-size: 14px;
+  border: 1px solid #242424;
+}
+.form-url button:focus{
+  outline: none;
+}
+
+.content{
+  flex-grow: 1;
+}
+.content .input-text{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.loader-container{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader {
+  width: 50px;
+  padding: 8px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: #64CCC5;
+  --_m: 
+    conic-gradient(#0000 10%,#000),
+    linear-gradient(#000 0 0) content-box;
+  -webkit-mask: var(--_m);
+          mask: var(--_m);
+  -webkit-mask-composite: source-out;
+          mask-composite: subtract;
+  animation: l3 1s infinite linear;
+}
+@keyframes l3 {to{transform: rotate(1turn)}}
