@@ -7,4 +7,4 @@ services:
     environment:
       - API_ENV=${API_ENV}
     ports:
-      - 8000:80
+      - 5173:5173

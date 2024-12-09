@@ -18,7 +18,7 @@ function App() {
 
     setLoader(1);
 
-    const res = await fetch("http://localhost:8000/api/v1/url/", {
+    const res = await fetch("https://pdf2md.joseferalvarez.dev/api/v1/url/", {
       method: "POST",
       headers: { "Content-Type": "application/json"},
       body: JSON.stringify({
